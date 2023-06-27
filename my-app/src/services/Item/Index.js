@@ -1,8 +1,8 @@
-import { tasks } from "../../tmp/data";
+import { Item } from "../../tmp/data";
 
 const getItems = async (catId) => {
   return new Promise((resolve, reject) => {
-    resolve(Item.filter((task) => Item.categoryId === catId));
+    resolve(Item.filter((Item) => Item.categoryId === catId));
   });
 };
 

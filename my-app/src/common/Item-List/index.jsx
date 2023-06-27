@@ -1,7 +1,7 @@
-import { Item } from "../task";
+import { Item } from "../Item";
 import { Row, Col } from "react-bootstrap";
 
-const ItemList = ({ tasks }) => {
+const ItemList = ({ Item }) => {
   return (
     <Row>
       {Item.map((Item) => (
@@ -11,7 +11,7 @@ const ItemList = ({ tasks }) => {
             description={Item.description}
             id={Item.id}
             categoryId={Item.categoryId}
-            onTaskClicked={Item.onTaskClicked}
+            onItemClicked={Item.onItemClicked}
             textButton={Item.textButton}
           />
         </Col>
